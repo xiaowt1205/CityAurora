@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/loadingScene.css">
+    <title>城市極光 || CityAurora</title>
+</head>
+
+<body>
+    <div id="CityAurora">
+        <!-- Load -->
+        <div id="loadingScene" class="">
+            <div id="car" style="text-align: center; font-size:24px; color: white">我是一台車</div>
+        </div>
+
+        <!-- Main -->
+        <div id="main" class="w-100 h-100">
+            <img id="TaiwanMap" src="/img/Map.png" usemap="#image-map" style="transform-origin: 0 0;">
+            <map name="image-map">
+                <area id="map-taichung" target="" alt="台中" title="台中" href="#"
+                    coords="56,138,117,139,128,164,80,190,26,186" shape="poly">
+                <area target="" alt="新北" title="新北" href="#" coords="86,80,176,77,170,110,115,125,57,132,70,92"
+                    shape="poly">
+                <area target="" alt="台南" title="台南" href="#" coords="30,209,105,209,111,252,48,291,1,268,7,210"
+                    shape="poly">
+            </map>
+        </div>
+        <!-- Modal -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
+
+    <script>
+
+    </script>
+
+    <!-- Intro Animation-->
+    <script>
+        setTimeout(function () {
+            $("#car").addClass("active");
+        }, 500);
+
+        setTimeout(function () {
+            $("#loadingScene").addClass("active");
+        }, 1500);
+
+        setTimeout(function () {
+            $("#loadingScene").fadeOut(1000, "linear");
+        }, 3000);
+
+        setTimeout(function () {
+            $("#TaiwanMap").fadeIn(1000, "linear");
+            $(document).ready(function (e) {
+                $('img[usemap]').rwdImageMaps();
+            });
+        }, 4000);
+    </script>
+
+    <script>
+        var map = document.querySelector("#TaiwanMap")
+
+
+        $("#map-taichung").click(
+            function () {
+                $("#TaiwanMap").css(
+                    "transition", "1s ease-in"
+                );
+                map.style.transformOrigin = "30% 40%";
+                setTimeout(function () {
+                    map.style.transform = "scale(5)";
+                }, 1000);
+
+            }
+        )
+
+    </script>
+</body>
+
+</html>

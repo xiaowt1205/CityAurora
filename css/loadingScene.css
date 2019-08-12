@@ -1,0 +1,25 @@
+#loadingScene{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color:#A4DAEE; 
+    transition: 3s ease-in-out;
+}
+
+#loadingScene.active{
+    background-color:#495758; 
+}
+
+#car{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    transition: 4s ease-in-out;
+}
+
+#car.active{
+    left:150%;
+}
