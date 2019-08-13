@@ -9,6 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/loadingScene.css">
+    <link rel="stylesheet" href="css/public.css">
     <title>城市極光 || CityAurora</title>
 </head>
 
@@ -18,11 +19,38 @@
         <div id="loadingScene" class="">
             <div id="car" style="text-align: center; font-size:24px; color: white">我是一台車</div>
         </div>
-
+        <!-- Nav -->
+        <nav id="Nav">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="logo ">
+                        我是LOGO
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                    <div class="navList ">
+                        <ul>
+                            <li><a href="#">關於城市極光</a></li>
+                            <li><a href="#">台中地區</a></li>
+                            <li><a href="#">彰化地區</a></li>
+                            <li><a href="#">南投地區</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <!-- Main -->
         <div id="main" class="w-100 h-100">
+            <div class="mask">
+                <div class="mask-cancel">X</div>
+                <div id="taichung" class="area-locate">
+                    <div class="locate-mark" data-toggle="modal" data-target="#Modal-taichung">我是地標</div>
+                </div>
+                <div class="area-locate"></div>
+                <div class="area-locate"></div>
+            </div>
             <img id="TaiwanMap" src="/img/Map.png" usemap="#image-map" style="transform-origin: 0 0;">
             <map name="image-map">
+                <!-- area標籤內要新增 id="map-地區名稱英文(全部小寫)" -->
                 <area id="map-taichung" target="" alt="台中" title="台中" href="#"
                     coords="56,138,117,139,128,164,80,190,26,186" shape="poly">
                 <area target="" alt="新北" title="新北" href="#" coords="86,80,176,77,170,110,115,125,57,132,70,92"
@@ -32,6 +60,25 @@
             </map>
         </div>
         <!-- Modal -->
+        <div class="modal fade" id="Modal-taichung" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
     </div>
 
 
@@ -64,17 +111,20 @@
         }, 3000);
 
         setTimeout(function () {
-            $("#TaiwanMap").fadeIn(1000, "linear");
+             $("#TaiwanMap").fadeIn(1000, "linear");
             $(document).ready(function (e) {
                 $('img[usemap]').rwdImageMaps();
             });
         }, 4000);
     </script>
 
+    <!-- Zoom In/Out -->
     <script>
         var map = document.querySelector("#TaiwanMap")
+        var mask = document.querySelector(".mask")
 
-
+        // Click area
+        //Taicgung
         $("#map-taichung").click(
             function () {
                 $("#TaiwanMap").css(
@@ -82,11 +132,68 @@
                 );
                 map.style.transformOrigin = "30% 40%";
                 setTimeout(function () {
-                    map.style.transform = "scale(5)";
+                    map.style.transform = "scale(4.5)";
+                    $('.mask').addClass("d-block")
                 }, 1000);
-
             }
         )
+
+        // $("#map-changhua").click(
+        //     function () {
+        //         $("#TaiwanMap").css(
+        //             "transition", "1s ease-in"
+        //         );
+        //         map.style.transformOrigin = "30% 40%";  放大座標
+        //         setTimeout(function () {
+        //             map.style.transform = "scale(4.5)";
+        //             $('.mask').addClass("d-block")
+        //         }, 1000);
+        //     }
+        // )
+
+        // $("#map-nantou").click(
+        //     function () {
+        //         $("#TaiwanMap").css(
+        //             "transition", "1s ease-in"
+        //         );
+        //         map.style.transformOrigin = "30% 40%";  放大座標
+        //         setTimeout(function () {
+        //             map.style.transform = "scale(4.5)";
+        //             $('.mask').addClass("d-block")
+        //         }, 1000);
+        //     }
+        // )
+
+
+        // display Mask 
+        $(".mask-cancel").click(
+            function () {
+                if ($(".mask").hasClass("d-block")) {
+                    $(".mask").removeClass("d-block")
+                    map.style.transform = "scale(1)";
+                }
+            }
+        )
+    </script>
+
+
+    <script>
+        let area = document.querySelectorAll("area");
+        area.forEach(function (element) {
+            element.onmouseover = function () {
+
+                console.log("In");
+
+                // let marker_number = element.dataset.maker;
+                // $("#marker-" + marker_number).show();
+            }
+
+            element.onmouseout = function () {
+                // let marker_number = element.dataset.maker;
+                // $("#marker-" + marker_number).hide();
+                console.log("Out");
+            }
+        });
 
     </script>
 </body>

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+
+a:active{
+
+}
+
+li{
+    list-style: none;
+}
+
+
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
