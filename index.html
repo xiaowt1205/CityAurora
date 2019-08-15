@@ -25,16 +25,17 @@
         <nav id="Nav">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="logo ">
-                        我是LOGO
+                    <div class="logo">
+                        <img class="w-100" src="img/Logo.png" alt="">
                         <!-- <img src="" alt=""> -->
                     </div>
-                    <div class="navList ">
+                    <div class="navList">
                         <ul>
-                            <li><a href="#">關於城市極光</a></li>
-                            <li><a href="#">台中地區</a></li>
-                            <li><a href="#">彰化地區</a></li>
-                            <li><a href="#">南投地區</a></li>
+                            <li><a href="#">推薦景點</a></li>
+                            <li><a href="#" id="nav-taichung">台中地區</a></li>
+                            <li><a href="#" id="nav-changhua">彰化地區</a></li>
+                            <li><a href="#" id="nav-nantou">南投地區</a></li>
+                            <li><a href="#">關於我們</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,10 +56,10 @@
                 <area id="map-taichung" target="" alt="Taichung" title="Taichung" href="#"
                     coords="526,832,574,884,624,912,673,922,719,909,754,905,776,917,811,924,836,924,858,932,890,947,936,949,980,937,1010,921,1028,900,1058,889,1095,870,1113,867,1127,844,1134,830,1157,822,1189,817,1205,832,1219,847,1232,862,1250,870,1267,877,1292,884,1307,889,1295,917,1275,937,1254,961,1242,982,1242,1006,1249,1034,1250,1067,1237,1103,1230,1113,1209,1098,1185,1094,1145,1093,1110,1079,1083,1046,1067,1024,1045,1031,1023,1054,1002,1061,987,1061,953,1093,923,1108,896,1113,861,1108,828,1111,808,1128,786,1133,763,1123,741,1128,724,1154,716,1188,693,1213,666,1221,616,1226,588,1214,561,1196,549,1179,519,1164,501,1146,476,1126,442,1099,431,1084,427,1067,416,1056,391,1047,419,1011,434,969,444,932,466,895,496,869"
                     shape="poly">
-                <area target="" alt="Chunghua" title="Chunghua" href="#"
+                <area id="map-changhua" target="" alt="Chunghua" title="Chunghua" href="#"
                     coords="398,1047,371,1077,353,1097,341,1134,333,1166,323,1187,300,1212,275,1236,255,1259,238,1291,221,1326,208,1351,193,1374,171,1404,198,1413,235,1408,266,1399,311,1403,370,1413,430,1433,488,1445,542,1445,557,1455,574,1448,602,1443,602,1421,574,1408,538,1379,525,1358,528,1333,525,1303,528,1279,533,1249,528,1231,520,1206,548,1192,547,1179,518,1161,497,1141,468,1119,440,1097,432,1069,420,1055"
                     shape="poly">
-                <area target="" alt="Nantou" title="Nantou" href="#"
+                <area id="map-nantou" target="" alt="Nantou" title="Nantou" href="#"
                     coords="557,1461,557,1493,543,1521,537,1550,538,1581,550,1592,590,1585,635,1583,662,1592,665,1610,680,1622,710,1628,732,1637,740,1657,734,1678,732,1693,764,1722,797,1742,826,1750,857,1750,884,1749,906,1743,936,1754,958,1774,966,1785,968,1749,974,1735,981,1710,986,1688,1008,1675,1039,1667,1066,1658,1078,1638,1098,1627,1118,1627,1135,1565,1138,1516,1141,1488,1104,1451,1096,1438,1126,1423,1146,1373,1170,1321,1176,1274,1166,1244,1170,1214,1188,1187,1201,1171,1206,1141,1215,1121,1231,1107,1210,1096,1183,1094,1148,1094,1128,1086,1114,1079,1091,1052,1073,1020,1046,1030,1024,1055,994,1059,954,1094,936,1101,914,1111,902,1111,881,1107,847,1109,826,1112,806,1126,784,1131,767,1126,757,1122,737,1134,727,1157,720,1177,700,1204,682,1212,652,1221,614,1224,587,1212,572,1202,547,1181,550,1192,520,1209,533,1236,528,1268,523,1298,527,1326,523,1354,540,1378,558,1399,590,1414,604,1423,604,1440,584,1446,567,1450"
                     shape="poly">
             </map>
@@ -73,10 +74,46 @@
                             <i class="fas fa-times"></i>
                             <i class="fas fa-angle-double-right" style="display: none;"></i>
                         </div>
-                        <h1>滔月景觀咖啡廳</h1>
+                        <!-- 景點所有資訊 -->
+                        <div class="w-100" style="height: 50%">
+                            <!-- 景點名稱 -->
+                            <h1 style="font-size: 30px;font-weight: 900">滔月景觀咖啡廳</h1>
+                            <!-- 景點地址 -->
+                            <p style="font-size: 15px">台中市沙鹿區台灣大到六段612縣168號</p>
+                            <!-- 營業時間 -->
+                            <p style="font-size: 15px; margin-bottom: 12px">週一至週五 18:00-01:00</p>
+                            <!-- 光害程度 -->
+                            <p style="font-size: 15px">★ 光害程度：中</p>
+                            <!-- 夜景類型 -->
+                            <p style="font-size: 15px">★ 夜景類型：城市夜景</p>
+                            <!-- 觀景叮嚀 -->
+                            <div style="margin-bottom: 12px">
+                                <span class="float-l" style="font-size: 15px">★ 觀景叮嚀：</span>
+                                <div class="float-l" style="width:calc(100% - 100px)"><span
+                                        style="word-break: break-all;">開車、騎車皆可。沿途不便會車，且路燈不多，建議多留意路況安全。</span></div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- 簡介 -->
+                            <div class="w-100">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+                                dicta, distinctio nemo vero magni non earum eos consequatur quos nesciunt saepe aperiam
+                                autem possimus perferendis voluptate tempore adipisci veniam deleniti.</div>
+                        </div>
+                        <!-- 地圖區塊 -->
+                        <div id="googleMap" class="w-100" style="height:50%;">
+                            <!-- iframe內要加一個 class="w-100 h-100" -->
+                            <iframe class="w-100 h-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.0924793443824!2d120.58503021543675!3d24.203540477230177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691573fdcb0f5d%3A0xfe40923f044bcc5!2z5ruU5pyI5pmv6KeA5ZKW5ZWh5buz!5e0!3m2!1szh-TW!2stw!4v1565851869207!5m2!1szh-TW!2stw"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <!-- GO按鈕 href裡面放google map的網址 -->
+                            <a target="_blank"
+                                href="https://www.google.com/maps/place/%E6%BB%94%E6%9C%88%E6%99%AF%E8%A7%80%E5%92%96%E5%95%A1%E5%BB%B3/@24.2035405,120.5850302,17z/data=!3m1!4b1!4m5!3m4!1s0x34691573fdcb0f5d:0xfe40923f044bcc5!8m2!3d24.2035356!4d120.5872189">
+                                <div class="GObtn">GO</div>
+                            </a>
+                        </div>
                     </div>
                     <div id="taichung-1" class="carousel slide carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
+                            <!-- 圖片輪播 在img scr內放入圖片 -->
                             <div class="carousel-item active">
                                 <img src="https://bayonline.co.nz/wp-content/uploads/2016/10/4-ways-cheer-up-depressed-cat.jpg"
                                     class="d-block w-100" alt="...">
@@ -89,6 +126,9 @@
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_March_2010-1.jpg"
                                     class="d-block w-100" alt="...">
                             </div>
+
+                            <!-- 如果要新增圖片張數 複製下面那行 一樣在 <img src=" "裡面給圖片-->
+                            <!-- <div class="carousel-item"><img src=" "class="d-block w-100" alt="..."></div> -->
                         </div>
                         <a class="carousel-control-prev" href="#taichung-1" role="button" data-slide="prev">
                             <span class="" aria-hidden="true" style="font-size: 60px">
@@ -160,40 +200,78 @@
                 $("#TaiwanMap").css(
                     "transition", "1s ease-in"
                 );
-                map.style.transformOrigin = "30% 40%";
+                map.style.transformOrigin = "40% 25%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4.5)";
+                    map.style.transform = "scale(4)";
                     $('.mask').addClass("d-block")
-                }, 850);
+                }, 900);
             }
         )
 
-        // $("#map-changhua").click(
-        //     function () {
-        //         $("#TaiwanMap").css(
-        //             "transition", "1s ease-in"
-        //         );
-        //         map.style.transformOrigin = "30% 40%";  放大座標
-        //         setTimeout(function () {
-        //             map.style.transform = "scale(4.5)";
-        //             $('.mask').addClass("d-block")
-        //         }, 1000);
-        //     }
-        // )
+        $("#nav-taichung").click(
+            function () {
+                $("#TaiwanMap").css(
+                    "transition", "1s ease-in"
+                );
+                map.style.transformOrigin = "40% 25%";
+                setTimeout(function () {
+                    map.style.transform = "scale(4)";
+                    $('.mask').addClass("d-block")
+                }, 900);
+            }
+        )
+        
 
-        // $("#map-nantou").click(
-        //     function () {
-        //         $("#TaiwanMap").css(
-        //             "transition", "1s ease-in"
-        //         );
-        //         map.style.transformOrigin = "30% 40%";  放大座標
-        //         setTimeout(function () {
-        //             map.style.transform = "scale(4.5)";
-        //             $('.mask').addClass("d-block")
-        //         }, 1000);
-        //     }
-        // )
+        $("#map-changhua").click(
+            function () {
+                $("#TaiwanMap").css(
+                    "transition", "1s ease-in"
+                );
+                map.style.transformOrigin = "20% 35%";  
+                setTimeout(function () {
+                    map.style.transform = "scale(4.5)";
+                    $('.mask').addClass("d-block")
+                }, 900);
+            }
+        )
+        $("#nav-changhua").click(
+            function () {
+                $("#TaiwanMap").css(
+                    "transition", "1s ease-in"
+                );
+                map.style.transformOrigin = "20% 35%";  
+                setTimeout(function () {
+                    map.style.transform = "scale(4.5)";
+                    $('.mask').addClass("d-block")
+                }, 900);
+            }
+        )
 
+
+        $("#map-nantou").click(
+            function () {
+                $("#TaiwanMap").css(
+                    "transition", "1s ease-in"
+                );
+                map.style.transformOrigin = "45% 40%";  
+                setTimeout(function () {
+                    map.style.transform = "scale(4.5)";
+                    $('.mask').addClass("d-block")
+                }, 900);
+            }
+        )
+        $("#nav-nantou").click(
+            function () {
+                $("#TaiwanMap").css(
+                    "transition", "1s ease-in"
+                );
+                map.style.transformOrigin = "45% 40%";  
+                setTimeout(function () {
+                    map.style.transform = "scale(4.5)";
+                    $('.mask').addClass("d-block")
+                }, 900);
+            }
+        )
 
         // display Mask 
         $(".mask-cancel").click(
@@ -208,10 +286,10 @@
         $(".viewInfo-toggle").click(
             function () {
                 $(".viewInfo").toggleClass("active")
-                if($(".viewInfo").hasClass("active")){
+                if ($(".viewInfo").hasClass("active")) {
                     $(".fa-times").hide()
                     $(".fa-angle-double-right").show()
-                }else{
+                } else {
                     $(".fa-times").show()
                     $(".fa-angle-double-right").hide()
                 }

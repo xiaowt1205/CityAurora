@@ -8,9 +8,7 @@
 
 /* Nav */
 .logo{
-    width: 100px;
-    height: 50px;
-    background-color: yellow;
+    width: 150px;
 }
 
 #Nav{
@@ -18,15 +16,24 @@
     top: 0;
     left: 0;
     z-index: 87;
+    padding: 10px;
 }
-#Nav .container{
-    padding: 0 100px;
-}
+
 #Nav ul li{
     display: inline;
-    margin-left: 40px;
     line-height: 50px;
     font-size: 18px;
+    border-right: 1px solid white;
+    padding: 0 20px;
+    font-weight: 600;
+}
+#Nav ul li a:hover{
+    color:#F0C960; 
+    border-bottom: 2px solid #F0C960;
+    font-weight: 900;
+}
+#Nav ul li:last-child{
+    border-right: none;
 }
 
 /* Main */
@@ -90,9 +97,8 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 99;
-    padding: 20px 40px;
+    padding: 60px 40px 40px 100px;
     color: white;
-    text-align: center;
     font-weight: 900;
     transition: 1s;
 }
@@ -120,3 +126,39 @@
     z-index: 100;
 }
 
+.carousel-control-prev {
+    left: -45px;
+}
+.carousel-control-next {
+    right: -45px;
+}
+
+.viewInfo p{
+    margin-bottom: 0px;
+}
+
+#googleMap{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#googleMap iframe{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#googleMap .GObtn{
+    position: absolute;
+    right: -30px;
+    bottom: -25px;
+    width: 75px;
+    height: 60px;
+    background-color: #E25061;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 26px;
+    z-index: 1000;
+}
