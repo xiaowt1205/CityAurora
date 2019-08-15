@@ -18,8 +18,8 @@
 <body>
     <div id="CityAurora">
         <!-- Load -->
-        <div id="loadingScene" class="d-none">
-            <div id="car" style="text-align: center; font-size:24px; color: white">我是一台車</div>
+        <div id="loadingScene" class="">
+            <div id="car"><img class="w-100" src="/img/Intro-car.png" alt=""></div>
         </div>
         <!-- Nav -->
         <nav id="Nav">
@@ -43,6 +43,13 @@
         </nav>
         <!-- Main -->
         <div id="main" class="w-100 h-100">
+            <div class="container">
+                <div id="decoration">
+                    <img class="w-75" src="/img/main-talk.png" alt="">
+                    <img class="w-100" src="/img/main-car.png" alt="">
+                    <img class="w-75" src="/img/main-ground.png" alt="">
+                </div>
+            </div>
             <div class="mask">
                 <div class="mask-cancel">X</div>
                 <div id="taichung" class="area-locate">
@@ -51,18 +58,23 @@
                 <div class="area-locate"></div>
                 <div class="area-locate"></div>
             </div>
-            <img id="TaiwanMap" src="/img/TaiwanMap.png" usemap="#image-map">
-            <map name="image-map">
-                <area id="map-taichung" target="" alt="Taichung" title="Taichung" href="#"
-                    coords="526,832,574,884,624,912,673,922,719,909,754,905,776,917,811,924,836,924,858,932,890,947,936,949,980,937,1010,921,1028,900,1058,889,1095,870,1113,867,1127,844,1134,830,1157,822,1189,817,1205,832,1219,847,1232,862,1250,870,1267,877,1292,884,1307,889,1295,917,1275,937,1254,961,1242,982,1242,1006,1249,1034,1250,1067,1237,1103,1230,1113,1209,1098,1185,1094,1145,1093,1110,1079,1083,1046,1067,1024,1045,1031,1023,1054,1002,1061,987,1061,953,1093,923,1108,896,1113,861,1108,828,1111,808,1128,786,1133,763,1123,741,1128,724,1154,716,1188,693,1213,666,1221,616,1226,588,1214,561,1196,549,1179,519,1164,501,1146,476,1126,442,1099,431,1084,427,1067,416,1056,391,1047,419,1011,434,969,444,932,466,895,496,869"
-                    shape="poly">
-                <area id="map-changhua" target="" alt="Chunghua" title="Chunghua" href="#"
-                    coords="398,1047,371,1077,353,1097,341,1134,333,1166,323,1187,300,1212,275,1236,255,1259,238,1291,221,1326,208,1351,193,1374,171,1404,198,1413,235,1408,266,1399,311,1403,370,1413,430,1433,488,1445,542,1445,557,1455,574,1448,602,1443,602,1421,574,1408,538,1379,525,1358,528,1333,525,1303,528,1279,533,1249,528,1231,520,1206,548,1192,547,1179,518,1161,497,1141,468,1119,440,1097,432,1069,420,1055"
-                    shape="poly">
-                <area id="map-nantou" target="" alt="Nantou" title="Nantou" href="#"
-                    coords="557,1461,557,1493,543,1521,537,1550,538,1581,550,1592,590,1585,635,1583,662,1592,665,1610,680,1622,710,1628,732,1637,740,1657,734,1678,732,1693,764,1722,797,1742,826,1750,857,1750,884,1749,906,1743,936,1754,958,1774,966,1785,968,1749,974,1735,981,1710,986,1688,1008,1675,1039,1667,1066,1658,1078,1638,1098,1627,1118,1627,1135,1565,1138,1516,1141,1488,1104,1451,1096,1438,1126,1423,1146,1373,1170,1321,1176,1274,1166,1244,1170,1214,1188,1187,1201,1171,1206,1141,1215,1121,1231,1107,1210,1096,1183,1094,1148,1094,1128,1086,1114,1079,1091,1052,1073,1020,1046,1030,1024,1055,994,1059,954,1094,936,1101,914,1111,902,1111,881,1107,847,1109,826,1112,806,1126,784,1131,767,1126,757,1122,737,1134,727,1157,720,1177,700,1204,682,1212,652,1221,614,1224,587,1212,572,1202,547,1181,550,1192,520,1209,533,1236,528,1268,523,1298,527,1326,523,1354,540,1378,558,1399,590,1414,604,1423,604,1440,584,1446,567,1450"
-                    shape="poly">
-            </map>
+            <div id="taiwan">
+                <img class="w-100" id="TaiwanMap" src="/img/TaiwanMap.png" usemap="#image-map">
+                <map name="image-map">
+                    <area data-maker="1" id="map-taichung" target="" alt="Taichung" title="Taichung" href="#"
+                        coords="526,832,574,884,624,912,673,922,719,909,754,905,776,917,811,924,836,924,858,932,890,947,936,949,980,937,1010,921,1028,900,1058,889,1095,870,1113,867,1127,844,1134,830,1157,822,1189,817,1205,832,1219,847,1232,862,1250,870,1267,877,1292,884,1307,889,1295,917,1275,937,1254,961,1242,982,1242,1006,1249,1034,1250,1067,1237,1103,1230,1113,1209,1098,1185,1094,1145,1093,1110,1079,1083,1046,1067,1024,1045,1031,1023,1054,1002,1061,987,1061,953,1093,923,1108,896,1113,861,1108,828,1111,808,1128,786,1133,763,1123,741,1128,724,1154,716,1188,693,1213,666,1221,616,1226,588,1214,561,1196,549,1179,519,1164,501,1146,476,1126,442,1099,431,1084,427,1067,416,1056,391,1047,419,1011,434,969,444,932,466,895,496,869"
+                        shape="poly">
+                    <area data-maker="2" id="map-changhua" target="" alt="Chunghua" title="Chunghua" href="#"
+                        coords="398,1047,371,1077,353,1097,341,1134,333,1166,323,1187,300,1212,275,1236,255,1259,238,1291,221,1326,208,1351,193,1374,171,1404,198,1413,235,1408,266,1399,311,1403,370,1413,430,1433,488,1445,542,1445,557,1455,574,1448,602,1443,602,1421,574,1408,538,1379,525,1358,528,1333,525,1303,528,1279,533,1249,528,1231,520,1206,548,1192,547,1179,518,1161,497,1141,468,1119,440,1097,432,1069,420,1055"
+                        shape="poly">
+                    <area data-maker="3" id="map-nantou" target="" alt="Nantou" title="Nantou" href="#"
+                        coords="557,1461,557,1493,543,1521,537,1550,538,1581,550,1592,590,1585,635,1583,662,1592,665,1610,680,1622,710,1628,732,1637,740,1657,734,1678,732,1693,764,1722,797,1742,826,1750,857,1750,884,1749,906,1743,936,1754,958,1774,966,1785,968,1749,974,1735,981,1710,986,1688,1008,1675,1039,1667,1066,1658,1078,1638,1098,1627,1118,1627,1135,1565,1138,1516,1141,1488,1104,1451,1096,1438,1126,1423,1146,1373,1170,1321,1176,1274,1166,1244,1170,1214,1188,1187,1201,1171,1206,1141,1215,1121,1231,1107,1210,1096,1183,1094,1148,1094,1128,1086,1114,1079,1091,1052,1073,1020,1046,1030,1024,1055,994,1059,954,1094,936,1101,914,1111,902,1111,881,1107,847,1109,826,1112,806,1126,784,1131,767,1126,757,1122,737,1134,727,1157,720,1177,700,1204,682,1212,652,1221,614,1224,587,1212,572,1202,547,1181,550,1192,520,1209,533,1236,528,1268,523,1298,527,1326,523,1354,540,1378,558,1399,590,1414,604,1423,604,1440,584,1446,567,1450"
+                        shape="poly">
+                </map>
+                <img id="map-hover-1" class="map-hover" style="" src="/img/map-taichung-hover.png" alt="">
+                <img id="map-hover-2" class="map-hover" style="" src="/img/map-chunghua-hover.png" alt="">
+                <img id="map-hover-3" class="map-hover" style="" src="/img/map-nantou-hover.png" alt="">
+            </div>
         </div>
         <!-- Modal -->
         <div class="modal fade" id="Modal-taichung" tabindex="-1" role="dialog"
@@ -107,7 +119,10 @@
                             <!-- GO按鈕 href裡面放google map的網址 -->
                             <a target="_blank"
                                 href="https://www.google.com/maps/place/%E6%BB%94%E6%9C%88%E6%99%AF%E8%A7%80%E5%92%96%E5%95%A1%E5%BB%B3/@24.2035405,120.5850302,17z/data=!3m1!4b1!4m5!3m4!1s0x34691573fdcb0f5d:0xfe40923f044bcc5!8m2!3d24.2035356!4d120.5872189">
-                                <div class="GObtn">GO</div>
+                                <div class="GObtn">
+                                    <img class="w-100" src="img/GObtn.png" alt="">
+                                    <img class="w-100" src="img/GObtn-hover.png" alt="">
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -181,7 +196,7 @@
         }, 3000);
 
         setTimeout(function () {
-            // $("#TaiwanMap").fadeIn(1000, "linear");
+            $("#TaiwanMap").fadeIn(1000, "linear");
             $(document).ready(function (e) {
                 $('img[usemap]').rwdImageMaps();
             });
@@ -220,14 +235,14 @@
                 }, 900);
             }
         )
-        
+
 
         $("#map-changhua").click(
             function () {
                 $("#TaiwanMap").css(
                     "transition", "1s ease-in"
                 );
-                map.style.transformOrigin = "20% 35%";  
+                map.style.transformOrigin = "20% 35%";
                 setTimeout(function () {
                     map.style.transform = "scale(4.5)";
                     $('.mask').addClass("d-block")
@@ -239,7 +254,7 @@
                 $("#TaiwanMap").css(
                     "transition", "1s ease-in"
                 );
-                map.style.transformOrigin = "20% 35%";  
+                map.style.transformOrigin = "20% 35%";
                 setTimeout(function () {
                     map.style.transform = "scale(4.5)";
                     $('.mask').addClass("d-block")
@@ -253,7 +268,7 @@
                 $("#TaiwanMap").css(
                     "transition", "1s ease-in"
                 );
-                map.style.transformOrigin = "45% 40%";  
+                map.style.transformOrigin = "45% 40%";
                 setTimeout(function () {
                     map.style.transform = "scale(4.5)";
                     $('.mask').addClass("d-block")
@@ -265,7 +280,7 @@
                 $("#TaiwanMap").css(
                     "transition", "1s ease-in"
                 );
-                map.style.transformOrigin = "45% 40%";  
+                map.style.transformOrigin = "45% 40%";
                 setTimeout(function () {
                     map.style.transform = "scale(4.5)";
                     $('.mask').addClass("d-block")
@@ -302,17 +317,13 @@
         let area = document.querySelectorAll("area");
         area.forEach(function (element) {
             element.onmouseover = function () {
-
-                console.log("In");
-
-                // let marker_number = element.dataset.maker;
-                // $("#marker-" + marker_number).show();
+                let marker_number = element.dataset.maker;
+                $("#map-hover-" + marker_number).show();
             }
 
             element.onmouseout = function () {
-                // let marker_number = element.dataset.maker;
-                // $("#marker-" + marker_number).hide();
-                console.log("Out");
+                let marker_number = element.dataset.maker;
+                $("#map-hover-" + marker_number).hide();
             }
         });
 
