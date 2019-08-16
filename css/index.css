@@ -94,6 +94,7 @@
 .map-hover{
     width: 50%;
     display: none;
+    pointer-events: none;
 }
 
 #taiwan #map-hover-1{
@@ -101,16 +102,6 @@
     top: 125px;
     left: 90px;
 }
-
-/* #taiwan #map-hover-1:hover{
-    display: block !important;
-}
-#taiwan #map-hover-2:hover{
-    display: block !important;
-}
-#taiwan #map-hover-3:hover{
-    display: block !important;
-} */
 
 #taiwan #map-hover-2{
     position: absolute;
@@ -121,7 +112,7 @@
 #taiwan #map-hover-3{
     position: absolute;
     top: 220px;
-    left: 95px;
+    left: 100px;
 }
 
 #decoration{
