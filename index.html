@@ -19,7 +19,7 @@
     <div id="CityAurora">
         <!-- Load -->
         <div id="loadingScene" class="">
-            <div id="car"><img class="w-100" src="/img/Intro-car.png" alt=""></div>
+            <div id="car"><img class="w-100" src="img/Intro-car.png" alt=""></div>
         </div>
         <!-- Nav -->
         <nav id="Nav">
@@ -45,20 +45,17 @@
         <div id="main" class="w-100 h-100">
             <div class="container">
                 <div id="decoration">
-                    <img class="w-75" src="/img/main-talk.png" alt="">
-                    <img class="w-100" src="/img/main-car.png" alt="">
-                    <img class="w-75" src="/img/main-ground.png" alt="">
+                    <img class="w-75" src="img/main-talk.png" alt="">
+                    <img class="w-100" src="img/main-car.png" alt="">
+                    <img class="w-75" src="img/main-ground.png" alt="">
                 </div>
             </div>
             <div class="mask">
                 <div class="mask-cancel">X</div>
-                <div id="taichung" class="area-locate">
-                    <div class="locate-mark" data-toggle="modal" data-target="#Modal-taichung">我是地標</div>
-                </div>
             </div>
             <div id="taiwan" class="taiwan-map-pos">
-                <img class="w-100" id="TaiwanMap" src="/img/TaiwanMap.png" usemap="#image-map">
-                <map name="image-map">
+                <img class="w-100" id="TaiwanMap" src="img/TaiwanMap.png" usemap="#taiwan-map">
+                <map name="taiwan-map">
                     <area data-maker="1" id="map-taichung" target="" alt="Taichung" title="Taichung" href="#"
                         coords="526,832,574,884,624,912,673,922,719,909,754,905,776,917,811,924,836,924,858,932,890,947,936,949,980,937,1010,921,1028,900,1058,889,1095,870,1113,867,1127,844,1134,830,1157,822,1189,817,1205,832,1219,847,1232,862,1250,870,1267,877,1292,884,1307,889,1295,917,1275,937,1254,961,1242,982,1242,1006,1249,1034,1250,1067,1237,1103,1230,1113,1209,1098,1185,1094,1145,1093,1110,1079,1083,1046,1067,1024,1045,1031,1023,1054,1002,1061,987,1061,953,1093,923,1108,896,1113,861,1108,828,1111,808,1128,786,1133,763,1123,741,1128,724,1154,716,1188,693,1213,666,1221,616,1226,588,1214,561,1196,549,1179,519,1164,501,1146,476,1126,442,1099,431,1084,427,1067,416,1056,391,1047,419,1011,434,969,444,932,466,895,496,869"
                         shape="poly">
@@ -69,14 +66,61 @@
                         coords="557,1461,557,1493,543,1521,537,1550,538,1581,550,1592,590,1585,635,1583,662,1592,665,1610,680,1622,710,1628,732,1637,740,1657,734,1678,732,1693,764,1722,797,1742,826,1750,857,1750,884,1749,906,1743,936,1754,958,1774,966,1785,968,1749,974,1735,981,1710,986,1688,1008,1675,1039,1667,1066,1658,1078,1638,1098,1627,1118,1627,1135,1565,1138,1516,1141,1488,1104,1451,1096,1438,1126,1423,1146,1373,1170,1321,1176,1274,1166,1244,1170,1214,1188,1187,1201,1171,1206,1141,1215,1121,1231,1107,1210,1096,1183,1094,1148,1094,1128,1086,1114,1079,1091,1052,1073,1020,1046,1030,1024,1055,994,1059,954,1094,936,1101,914,1111,902,1111,881,1107,847,1109,826,1112,806,1126,784,1131,767,1126,757,1122,737,1134,727,1157,720,1177,700,1204,682,1212,652,1221,614,1224,587,1212,572,1202,547,1181,550,1192,520,1209,533,1236,528,1268,523,1298,527,1326,523,1354,540,1378,558,1399,590,1414,604,1423,604,1440,584,1446,567,1450"
                         shape="poly">
                 </map>
-                <img id="map-hover-1" class="map-area-pos" style="" src="/img/map-taichung-hover.png" alt="">
-                <img id="map-hover-2" class="map-area-pos" style="" src="/img/map-chunghua-hover.png" alt="">
-                <img id="map-hover-3" class="map-area-pos" style="" src="/img/map-nantou-hover.png" alt="">
+                <img id="map-hover-1" class="map-area-pos" src="img/map-taichung-hover.png" alt="">
+                <img id="map-hover-2" class="map-area-pos" src="img/map-chunghua-hover.png" alt="">
+                <img id="map-hover-3" class="map-area-pos" src="img/map-nantou-hover.png" alt="">
             </div>
-            <div id="taichung" class="taiwan-map-pos"></div>
-            <div id="changhua" class="taiwan-map-pos"></div>
-            <div id="nantou" class="taiwan-map-pos"></div>
-            <div></div>
+            <div id="locate-taichung" class="taiwan-map-pos d-none">
+                <img class="w-100 locate-map" src="img/locate-taichung.png" usemap="#taichung-map">
+                <map name="taichung-map">
+                    <area data-maker="4" data-toggle="modal" data-target="#Modal-taichung-01" target="" alt="高美濕地觀景橋" title="高美濕地觀景橋" href="#" coords="537,950,31" shape="circle">
+                    <area data-maker="5" data-toggle="modal" data-target="#Modal-taichung-02" target="" alt="月下老人" title="月下老人" href="#" coords="583,1029,25" shape="circle">
+                    <area data-maker="6" data-toggle="modal" data-target="#Modal-taichung-03" target="" alt="啡文學咖啡龍井店" title="啡文學咖啡龍井店" href="#" coords="546,1038,24" shape="circle">
+                    <area data-maker="7" data-toggle="modal" data-target="#Modal-taichung-04" target="" alt="大肚藍色公路" title="大肚藍色公路" href="#" coords="534,1089,23" shape="circle">
+                    <area data-maker="8" data-toggle="modal" data-target="#Modal-taichung-05" target="" alt="望高寮(東海古堡)" title="望高寮(東海古堡)" href="#" coords="543,1136,23" shape="circle">
+                    <area data-maker="9" data-toggle="modal" data-target="#Modal-taichung-06" target="" alt="柳川水岸景觀步道" title="柳川水岸景觀步道" href="#" coords="662,1150,31" shape="circle">
+                    <area data-maker="10" data-toggle="modal" data-target="#Modal-taichung-07" target="" alt="法蝶藝術廚房" title="法蝶藝術廚房" href="#" coords="785,1117,30" shape="circle">
+                </map>
+                <img id="map-hover-4" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-5" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-6" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-7" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-8" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-9" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-10" class="locate-mark-pos" src="" alt=""> 
+            </div>
+            <div id="locate-changhua" class="taiwan-map-pos d-none">
+                <img class="w-100 locate-map" src="img/locate-chunghua.png" usemap="#changhua-map">
+                <map name="changhua-map">
+                    <area data-maker="11"  data-toggle="modal" data-target="#Modal-changhua-01" target="" alt="八卦山天空步道" title="八卦山天空步道" href="#" coords="490,1143,19" shape="circle">
+                    <area data-maker="12"  data-toggle="modal" data-target="#Modal-changhua-02" target="" alt="貓頭鷹廣場" title="貓頭鷹廣場" href="#" coords="518,1183,18" shape="circle">
+                    <area data-maker="13"  data-toggle="modal" data-target="#Modal-changhua-03" target="" alt="花壇山中居景觀餐廳" title="花壇山中居景觀餐廳" href="#" coords="553,1196,17" shape="circle">
+                    <area data-maker="14"  data-toggle="modal" data-target="#Modal-changhua-04" target="" alt="銀河鐵道望景餐廳" title="銀河鐵道望景餐廳" href="#" coords="555,1278,18" shape="circle">
+                    <area data-maker="15"  data-toggle="modal" data-target="#Modal-changhua-05" target="" alt="夜光高鐵庭園咖啡" title="夜光高鐵庭園咖啡" href="#" coords="534,1311,17" shape="circle">
+                </map>
+                <img id="map-hover-11" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-12" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-13" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-14" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-15" class="locate-mark-pos" src="" alt=""> 
+            </div>
+            <div id="locate-nantou" class="taiwan-map-pos d-none">
+                <img class="w-100 locate-map" src="img/locate-nantou.png" usemap="#nantou-map" alt="">
+                <map name="nantou-map">
+                    <area data-maker="16" data-toggle="modal" data-target="#Modal-nantou-01" target="" alt="東星屋景觀餐廳" title="東星屋景觀餐廳" href="#" coords="611,1301,24" shape="circle">
+                    <area data-maker="17" data-toggle="modal" data-target="#Modal-nantou-02" target="" alt="星月天空" title="星月天空" href="#" coords="588,1343,25" shape="circle">
+                    <area data-maker="18" data-toggle="modal" data-target="#Modal-nantou-03" target="" alt="天空之星" title="天空之星" href="#" coords="634,1403,22" shape="circle">
+                    <area data-maker="19" data-toggle="modal" data-target="#Modal-nantou-04" target="" alt="虎頭山" title="虎頭山" href="#" coords="876,1317,21" shape="circle">
+                    <area data-maker="20" data-toggle="modal" data-target="#Modal-nantou-05" target="" alt="小西湖鯉魚潭" title="小西湖鯉魚潭" href="#" coords="906,1283,25" shape="circle">
+                    <area data-maker="21" data-toggle="modal" data-target="#Modal-nantou-06" target="" alt="武嶺" title="武嶺" href="#" coords="1009,1192,28" shape="circle">
+                </map>
+                <img id="map-hover-16" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-17" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-18" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-19" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-20" class="locate-mark-pos" src="" alt="">
+                <img id="map-hover-21" class="locate-mark-pos" src="" alt=""> 
+            </div>
         </div>
         <!-- Modal -->
         <div class="modal fade" id="Modal-taichung" tabindex="-1" role="dialog"
@@ -210,31 +254,46 @@
         var map = document.querySelector("#TaiwanMap")
         var mask = document.querySelector(".mask")
 
-        // Click area
         //Taicgung
         $("#map-taichung").click(
             function () {
                 $("#TaiwanMap").css(
-                    "transition", "1s ease-in"
+                    "transition", ".5s ease-in"
                 );
                 map.style.transformOrigin = "40% 25%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4)";
+                    map.style.transform = "scale(3)";
                     $('.mask').addClass("d-block")
-                }, 900);
+                    setTimeout(function () {
+                        $('#locate-taichung').addClass('active')
+                        $('#locate-changhua').removeClass('active')
+                        $('#locate-nantou').removeClass('active')
+                        $(document).ready(function (e) {
+                            $('img[usemap]').rwdImageMaps();
+                        });
+                    }, 400);
+                },0);
             }
         )
 
         $("#nav-taichung").click(
             function () {
+                $('#locate-changhua').removeClass('active')
+                $('#locate-nantou').removeClass('active')
                 $("#TaiwanMap").css(
-                    "transition", "1s ease-in"
+                    "transition", ".5s ease-in"
                 );
                 map.style.transformOrigin = "40% 25%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4)";
+                    map.style.transform = "scale(3)";
                     $('.mask').addClass("d-block")
-                }, 900);
+                    setTimeout(function () {
+                        $('#locate-taichung').addClass('active')
+                        $(document).ready(function (e) {
+                            $('img[usemap]').rwdImageMaps();
+                        });
+                    }, 400);
+                },0);
             }
         )
 
@@ -242,25 +301,41 @@
         $("#map-changhua").click(
             function () {
                 $("#TaiwanMap").css(
-                    "transition", "1s ease-in"
+                    "transition", ".5s ease-in"
                 );
                 map.style.transformOrigin = "20% 35%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4)";
+                    map.style.transform = "scale(3)";
                     $('.mask').addClass("d-block")
-                }, 900);
+                    setTimeout(function () {
+                        $('#locate-taichung').removeClass('active')
+                        $('#locate-changhua').addClass('active')
+                        $('#locate-nantou').removeClass('active')
+                        $(document).ready(function (e) {
+                            $('img[usemap]').rwdImageMaps();
+                        });
+                    }, 400);
+                },0);
             }
         )
         $("#nav-changhua").click(
             function () {
+                $('#locate-taichung').removeClass('active')
+                $('#locate-nantou').removeClass('active')
                 $("#TaiwanMap").css(
-                    "transition", "1s ease-in"
+                    "transition", ".5s ease-in"
                 );
                 map.style.transformOrigin = "20% 35%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4)";
+                    map.style.transform = "scale(3)";
                     $('.mask').addClass("d-block")
-                }, 900);
+                    setTimeout(function () {
+                        $('#locate-changhua').addClass('active')
+                        $(document).ready(function (e) {
+                            $('img[usemap]').rwdImageMaps();
+                        });
+                    }, 400);
+                },0);
             }
         )
 
@@ -268,25 +343,41 @@
         $("#map-nantou").click(
             function () {
                 $("#TaiwanMap").css(
-                    "transition", "1s ease-in"
+                    "transition", ".5s ease-in"
                 );
                 map.style.transformOrigin = "45% 40%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4)";
+                    map.style.transform = "scale(3)";
                     $('.mask').addClass("d-block")
-                }, 900);
+                    setTimeout(function () {
+                        $('#locate-taichung').removeClass('active')
+                        $('#locate-changhua').removeClass('active')
+                        $('#locate-nantou').addClass('active')
+                        $(document).ready(function (e) {
+                            $('img[usemap]').rwdImageMaps();
+                        });
+                    }, 400);
+                },0);
             }
         )
         $("#nav-nantou").click(
             function () {
+                $('#locate-taichung').removeClass('active')
+                $('#locate-changhua').removeClass('active')
                 $("#TaiwanMap").css(
-                    "transition", "1s ease-in"
+                    "transition", ".5s ease-in"
                 );
                 map.style.transformOrigin = "45% 40%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4)";
+                    map.style.transform = "scale(3)";
                     $('.mask').addClass("d-block")
-                }, 900);
+                    setTimeout(function () {
+                        $('#locate-nantou').addClass('active')
+                        $(document).ready(function (e) {
+                            $('img[usemap]').rwdImageMaps();
+                        });
+                    }, 400);
+                },0);
             }
         )
 
@@ -296,6 +387,12 @@
                 if ($(".mask").hasClass("d-block")) {
                     $(".mask").removeClass("d-block")
                     map.style.transform = "scale(1)";
+                    $('#locate-taichung').removeClass('active')
+                    $('#locate-changhua').removeClass('active')
+                    $('#locate-nantou').removeClass('active')
+                    $(document).ready(function (e) {
+                        $('img[usemap]').rwdImageMaps();
+                    });
                 }
             }
         )
@@ -328,7 +425,6 @@
                 $("#map-hover-" + marker_number).hide();
             }
         });
-
     </script>
 </body>
 

@@ -3,7 +3,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url("/img/index-BG.png");
+    background-image: url('../img/index-bg.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
     width: 100vw;
     height: 100vh;
     /* background-color: rgba(0, 0, 0, 0.2); */
-    z-index: 10;
+    z-index: 55;
 }
 
 .mask-cancel{
@@ -80,6 +80,7 @@
 }
 
 #taiwan{
+    z-index: 51;
 }
 
 .taiwan-map-pos{
@@ -87,13 +88,34 @@
     position: absolute;
     top: -3%;
     right: 15%;
+    z-index: 50;
 }
 
+.taiwan-map-pos.active{
+    z-index: 60;
+    display: block !important;
+}
+
+#locate-changhua{
+    right: 17%;
+}
+#locate-nantou{
+    right: 10%;
+}
 #TaiwanMap{
     display: none;
     transform: scale(1);
 }
 
+.locate-mark-pos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 60px;
+    background-color: red;
+    /* display: none; */
+}
 .map-area-pos{
     width: 50%;
     display: none;
@@ -123,7 +145,7 @@
     bottom: -40%;
     width: 260px;
     height: 260px;
-    z-index: 61213906;
+    z-index: 95;
 }
 
 #decoration img:nth-child(1){
@@ -144,8 +166,20 @@
     top: 280px;
     left: 0;
 }
+#locate-taichung img{
+    transform-origin: 40% 25%;
+}
+#locate-changhua img{
+    transform-origin: 20% 35%;
+}
+#locate-nantou img{
+    transform-origin: 45% 40%;
+}
 
-/* Map */
+.locate-map{
+    transform: scale(4);
+}
+/* modal */
 
 .modal-content{
     overflow: hidden;
