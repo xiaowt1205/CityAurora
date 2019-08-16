@@ -32,7 +32,9 @@ li{
     clear: both;
 }
 
-
+.modal-header{
+    border: none;
+}
 /* swiper */
 .swiper-container {
     width: 100%;

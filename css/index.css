@@ -39,6 +39,11 @@
     border-right: none;
 }
 
+
+#recommend .modal-content{
+    background-color: rgba(25, 50, 66, .7);
+}
+
 /* Main */
 #main{
     position: relative;
@@ -266,7 +271,21 @@
 }
 
 
+.area-list{
+    width: 100%;
+    margin-bottom: 40px;
+}
 
+.area-list span{
+    color: #F0C960;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 900
+}
+
+.area-list .row{
+    margin-bottom: 20px;
+}
 /* animate */
 
 @keyframes Car-shake{

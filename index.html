@@ -31,7 +31,7 @@
                     </div>
                     <div class="navList">
                         <ul>
-                            <li><a href="#">推薦景點</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#recommend">推薦景點</a></li>
                             <li><a href="#" id="nav-taichung">台中地區</a></li>
                             <li><a href="#" id="nav-changhua">彰化地區</a></li>
                             <li><a href="#" id="nav-nantou">南投地區</a></li>
@@ -73,13 +73,20 @@
             <div id="locate-taichung" class="taiwan-map-pos d-none">
                 <img class="w-100 locate-map" src="img/locate-taichung.png" usemap="#taichung-map">
                 <map name="taichung-map">
-                    <area data-maker="4" data-toggle="modal" data-target="#Modal-taichung-01" target="" alt="高美濕地觀景橋" title="高美濕地觀景橋" href="#" coords="537,950,31" shape="circle">
-                    <area data-maker="5" data-toggle="modal" data-target="#Modal-taichung-02" target="" alt="月下老人" title="月下老人" href="#" coords="583,1029,25" shape="circle">
-                    <area data-maker="6" data-toggle="modal" data-target="#Modal-taichung-03" target="" alt="啡文學咖啡龍井店" title="啡文學咖啡龍井店" href="#" coords="546,1038,24" shape="circle">
-                    <area data-maker="7" data-toggle="modal" data-target="#Modal-taichung-04" target="" alt="大肚藍色公路" title="大肚藍色公路" href="#" coords="534,1089,23" shape="circle">
-                    <area data-maker="8" data-toggle="modal" data-target="#Modal-taichung-05" target="" alt="望高寮(東海古堡)" title="望高寮(東海古堡)" href="#" coords="543,1136,23" shape="circle">
-                    <area data-maker="9" data-toggle="modal" data-target="#Modal-taichung-06" target="" alt="柳川水岸景觀步道" title="柳川水岸景觀步道" href="#" coords="662,1150,31" shape="circle">
-                    <area data-maker="10" data-toggle="modal" data-target="#Modal-taichung-07" target="" alt="法蝶藝術廚房" title="法蝶藝術廚房" href="#" coords="785,1117,30" shape="circle">
+                    <area data-maker="4" data-toggle="modal" data-target="#Modal-taichung-01" target="" alt="高美濕地觀景橋"
+                        title="高美濕地觀景橋" href="#" coords="537,950,31" shape="circle">
+                    <area data-maker="5" data-toggle="modal" data-target="#Modal-taichung-02" target="" alt="月下老人"
+                        title="月下老人" href="#" coords="583,1029,25" shape="circle">
+                    <area data-maker="6" data-toggle="modal" data-target="#Modal-taichung-03" target="" alt="啡文學咖啡龍井店"
+                        title="啡文學咖啡龍井店" href="#" coords="546,1038,24" shape="circle">
+                    <area data-maker="7" data-toggle="modal" data-target="#Modal-taichung-04" target="" alt="大肚藍色公路"
+                        title="大肚藍色公路" href="#" coords="534,1089,23" shape="circle">
+                    <area data-maker="8" data-toggle="modal" data-target="#Modal-taichung-05" target="" alt="望高寮(東海古堡)"
+                        title="望高寮(東海古堡)" href="#" coords="543,1136,23" shape="circle">
+                    <area data-maker="9" data-toggle="modal" data-target="#Modal-taichung-06" target="" alt="柳川水岸景觀步道"
+                        title="柳川水岸景觀步道" href="#" coords="662,1150,31" shape="circle">
+                    <area data-maker="10" data-toggle="modal" data-target="#Modal-taichung-07" target="" alt="法蝶藝術廚房"
+                        title="法蝶藝術廚房" href="#" coords="785,1117,30" shape="circle">
                 </map>
                 <img id="map-hover-4" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-5" class="locate-mark-pos" src="" alt="">
@@ -87,42 +94,175 @@
                 <img id="map-hover-7" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-8" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-9" class="locate-mark-pos" src="" alt="">
-                <img id="map-hover-10" class="locate-mark-pos" src="" alt=""> 
+                <img id="map-hover-10" class="locate-mark-pos" src="" alt="">
             </div>
             <div id="locate-changhua" class="taiwan-map-pos d-none">
                 <img class="w-100 locate-map" src="img/locate-chunghua.png" usemap="#changhua-map">
                 <map name="changhua-map">
-                    <area data-maker="11"  data-toggle="modal" data-target="#Modal-changhua-01" target="" alt="八卦山天空步道" title="八卦山天空步道" href="#" coords="490,1143,19" shape="circle">
-                    <area data-maker="12"  data-toggle="modal" data-target="#Modal-changhua-02" target="" alt="貓頭鷹廣場" title="貓頭鷹廣場" href="#" coords="518,1183,18" shape="circle">
-                    <area data-maker="13"  data-toggle="modal" data-target="#Modal-changhua-03" target="" alt="花壇山中居景觀餐廳" title="花壇山中居景觀餐廳" href="#" coords="553,1196,17" shape="circle">
-                    <area data-maker="14"  data-toggle="modal" data-target="#Modal-changhua-04" target="" alt="銀河鐵道望景餐廳" title="銀河鐵道望景餐廳" href="#" coords="555,1278,18" shape="circle">
-                    <area data-maker="15"  data-toggle="modal" data-target="#Modal-changhua-05" target="" alt="夜光高鐵庭園咖啡" title="夜光高鐵庭園咖啡" href="#" coords="534,1311,17" shape="circle">
+                    <area data-maker="11" data-toggle="modal" data-target="#Modal-changhua-01" target="" alt="八卦山天空步道"
+                        title="八卦山天空步道" href="#" coords="490,1143,19" shape="circle">
+                    <area data-maker="12" data-toggle="modal" data-target="#Modal-changhua-02" target="" alt="貓頭鷹廣場"
+                        title="貓頭鷹廣場" href="#" coords="518,1183,18" shape="circle">
+                    <area data-maker="13" data-toggle="modal" data-target="#Modal-changhua-03" target="" alt="花壇山中居景觀餐廳"
+                        title="花壇山中居景觀餐廳" href="#" coords="553,1196,17" shape="circle">
+                    <area data-maker="14" data-toggle="modal" data-target="#Modal-changhua-04" target="" alt="銀河鐵道望景餐廳"
+                        title="銀河鐵道望景餐廳" href="#" coords="555,1278,18" shape="circle">
+                    <area data-maker="15" data-toggle="modal" data-target="#Modal-changhua-05" target="" alt="夜光高鐵庭園咖啡"
+                        title="夜光高鐵庭園咖啡" href="#" coords="534,1311,17" shape="circle">
                 </map>
                 <img id="map-hover-11" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-12" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-13" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-14" class="locate-mark-pos" src="" alt="">
-                <img id="map-hover-15" class="locate-mark-pos" src="" alt=""> 
+                <img id="map-hover-15" class="locate-mark-pos" src="" alt="">
             </div>
             <div id="locate-nantou" class="taiwan-map-pos d-none">
                 <img class="w-100 locate-map" src="img/locate-nantou.png" usemap="#nantou-map" alt="">
                 <map name="nantou-map">
-                    <area data-maker="16" data-toggle="modal" data-target="#Modal-nantou-01" target="" alt="東星屋景觀餐廳" title="東星屋景觀餐廳" href="#" coords="611,1301,24" shape="circle">
-                    <area data-maker="17" data-toggle="modal" data-target="#Modal-nantou-02" target="" alt="星月天空" title="星月天空" href="#" coords="588,1343,25" shape="circle">
-                    <area data-maker="18" data-toggle="modal" data-target="#Modal-nantou-03" target="" alt="天空之星" title="天空之星" href="#" coords="634,1403,22" shape="circle">
-                    <area data-maker="19" data-toggle="modal" data-target="#Modal-nantou-04" target="" alt="虎頭山" title="虎頭山" href="#" coords="876,1317,21" shape="circle">
-                    <area data-maker="20" data-toggle="modal" data-target="#Modal-nantou-05" target="" alt="小西湖鯉魚潭" title="小西湖鯉魚潭" href="#" coords="906,1283,25" shape="circle">
-                    <area data-maker="21" data-toggle="modal" data-target="#Modal-nantou-06" target="" alt="武嶺" title="武嶺" href="#" coords="1009,1192,28" shape="circle">
+                    <area data-maker="16" data-toggle="modal" data-target="#Modal-nantou-01" target="" alt="東星屋景觀餐廳"
+                        title="東星屋景觀餐廳" href="#" coords="611,1301,24" shape="circle">
+                    <area data-maker="17" data-toggle="modal" data-target="#Modal-nantou-02" target="" alt="星月天空"
+                        title="星月天空" href="#" coords="588,1343,25" shape="circle">
+                    <area data-maker="18" data-toggle="modal" data-target="#Modal-nantou-03" target="" alt="天空之星"
+                        title="天空之星" href="#" coords="634,1403,22" shape="circle">
+                    <area data-maker="19" data-toggle="modal" data-target="#Modal-nantou-04" target="" alt="虎頭山"
+                        title="虎頭山" href="#" coords="876,1317,21" shape="circle">
+                    <area data-maker="20" data-toggle="modal" data-target="#Modal-nantou-05" target="" alt="小西湖鯉魚潭"
+                        title="小西湖鯉魚潭" href="#" coords="906,1283,25" shape="circle">
+                    <area data-maker="21" data-toggle="modal" data-target="#Modal-nantou-06" target="" alt="武嶺"
+                        title="武嶺" href="#" coords="1009,1192,28" shape="circle">
                 </map>
                 <img id="map-hover-16" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-17" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-18" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-19" class="locate-mark-pos" src="" alt="">
                 <img id="map-hover-20" class="locate-mark-pos" src="" alt="">
-                <img id="map-hover-21" class="locate-mark-pos" src="" alt=""> 
+                <img id="map-hover-21" class="locate-mark-pos" src="" alt="">
             </div>
         </div>
         <!-- Modal -->
+        <div class="modal fade" id="recommend" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="color:white;font-size: 24px" id="exampleModalScrollableTitle">
+                            推薦景點</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="area-list">
+                            <span>台中地區</span>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-taichung-01"> <img class=""
+                                                src="img/list-tc-01.png" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-taichung-02"> <img class=""
+                                                src="img/list-tc-02.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-taichung-03"> <img class=""
+                                                src="img/list-tc-03.png" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-taichung-04"> <img class=""
+                                                src="img/list-tc-04.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-taichung-05"> <img class=""
+                                                src="img/list-tc-05.png" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-taichung-06"> <img class=""
+                                                src="img/list-tc-06.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-taichung-07"> <img class=""
+                                                src="img/list-tc-07.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-list">
+                            <span>彰化地區</span>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-changhua-01"> <img class=""
+                                                src="img/list-ch-01.png" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-changhua-02"> <img class=""
+                                                src="img/list-ch-02.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-changhua-03"> <img class=""
+                                                src="img/list-ch-03.png" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-changhua-04"> <img class=""
+                                                src="img/list-ch-04.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-changhua-05"> <img class=""
+                                                src="img/list-ch-05.png" alt=""></a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="area-list">
+                            <span>南投地區</span>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-nantou-01"> <img class=""
+                                                src="img/list-nt-01.png" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-nantou-02"> <img class=""
+                                                src="img/list-nt-02.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-nantou-03"> <img class=""
+                                                src="img/list-nt-03.png" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-nantou-04"> <img class=""
+                                                src="img/list-nt-04.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-nantou-05"> <img class=""
+                                                src="img/list-nt-05.png" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" data-toggle="modal" data-target="#Modal-nantou-06"> <img class=""
+                                                src="img/list-nt-06.png" alt=""></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="modal fade" id="Modal-taichung" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
@@ -272,7 +412,7 @@
                             $('img[usemap]').rwdImageMaps();
                         });
                     }, 400);
-                },0);
+                }, 0);
             }
         )
 
@@ -293,7 +433,7 @@
                             $('img[usemap]').rwdImageMaps();
                         });
                     }, 400);
-                },0);
+                }, 0);
             }
         )
 
@@ -315,7 +455,7 @@
                             $('img[usemap]').rwdImageMaps();
                         });
                     }, 400);
-                },0);
+                }, 0);
             }
         )
         $("#nav-changhua").click(
@@ -335,7 +475,7 @@
                             $('img[usemap]').rwdImageMaps();
                         });
                     }, 400);
-                },0);
+                }, 0);
             }
         )
 
@@ -357,7 +497,7 @@
                             $('img[usemap]').rwdImageMaps();
                         });
                     }, 400);
-                },0);
+                }, 0);
             }
         )
         $("#nav-nantou").click(
@@ -377,7 +517,7 @@
                             $('img[usemap]').rwdImageMaps();
                         });
                     }, 400);
-                },0);
+                }, 0);
             }
         )
 
