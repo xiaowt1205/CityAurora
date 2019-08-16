@@ -80,6 +80,9 @@
 }
 
 #taiwan{
+}
+
+.taiwan-map-pos{
     width: 480px;
     position: absolute;
     top: -3%;
@@ -91,7 +94,7 @@
     transform: scale(1);
 }
 
-.map-hover{
+.map-area-pos{
     width: 50%;
     display: none;
     pointer-events: none;

@@ -56,7 +56,7 @@
                     <div class="locate-mark" data-toggle="modal" data-target="#Modal-taichung">我是地標</div>
                 </div>
             </div>
-            <div id="taiwan">
+            <div id="taiwan" class="taiwan-map-pos">
                 <img class="w-100" id="TaiwanMap" src="/img/TaiwanMap.png" usemap="#image-map">
                 <map name="image-map">
                     <area data-maker="1" id="map-taichung" target="" alt="Taichung" title="Taichung" href="#"
@@ -69,10 +69,14 @@
                         coords="557,1461,557,1493,543,1521,537,1550,538,1581,550,1592,590,1585,635,1583,662,1592,665,1610,680,1622,710,1628,732,1637,740,1657,734,1678,732,1693,764,1722,797,1742,826,1750,857,1750,884,1749,906,1743,936,1754,958,1774,966,1785,968,1749,974,1735,981,1710,986,1688,1008,1675,1039,1667,1066,1658,1078,1638,1098,1627,1118,1627,1135,1565,1138,1516,1141,1488,1104,1451,1096,1438,1126,1423,1146,1373,1170,1321,1176,1274,1166,1244,1170,1214,1188,1187,1201,1171,1206,1141,1215,1121,1231,1107,1210,1096,1183,1094,1148,1094,1128,1086,1114,1079,1091,1052,1073,1020,1046,1030,1024,1055,994,1059,954,1094,936,1101,914,1111,902,1111,881,1107,847,1109,826,1112,806,1126,784,1131,767,1126,757,1122,737,1134,727,1157,720,1177,700,1204,682,1212,652,1221,614,1224,587,1212,572,1202,547,1181,550,1192,520,1209,533,1236,528,1268,523,1298,527,1326,523,1354,540,1378,558,1399,590,1414,604,1423,604,1440,584,1446,567,1450"
                         shape="poly">
                 </map>
-                <img id="map-hover-1" class="map-hover" style="" src="/img/map-taichung-hover.png" alt="">
-                <img id="map-hover-2" class="map-hover" style="" src="/img/map-chunghua-hover.png" alt="">
-                <img id="map-hover-3" class="map-hover" style="" src="/img/map-nantou-hover.png" alt="">
+                <img id="map-hover-1" class="map-area-pos" style="" src="/img/map-taichung-hover.png" alt="">
+                <img id="map-hover-2" class="map-area-pos" style="" src="/img/map-chunghua-hover.png" alt="">
+                <img id="map-hover-3" class="map-area-pos" style="" src="/img/map-nantou-hover.png" alt="">
             </div>
+            <div id="taichung" class="taiwan-map-pos"></div>
+            <div id="changhua" class="taiwan-map-pos"></div>
+            <div id="nantou" class="taiwan-map-pos"></div>
+            <div></div>
         </div>
         <!-- Modal -->
         <div class="modal fade" id="Modal-taichung" tabindex="-1" role="dialog"
@@ -234,7 +238,7 @@
             }
         )
 
-
+        //Changhua
         $("#map-changhua").click(
             function () {
                 $("#TaiwanMap").css(
@@ -242,7 +246,7 @@
                 );
                 map.style.transformOrigin = "20% 35%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4.5)";
+                    map.style.transform = "scale(4)";
                     $('.mask').addClass("d-block")
                 }, 900);
             }
@@ -254,13 +258,13 @@
                 );
                 map.style.transformOrigin = "20% 35%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4.5)";
+                    map.style.transform = "scale(4)";
                     $('.mask').addClass("d-block")
                 }, 900);
             }
         )
 
-
+        //Nantou
         $("#map-nantou").click(
             function () {
                 $("#TaiwanMap").css(
@@ -268,7 +272,7 @@
                 );
                 map.style.transformOrigin = "45% 40%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4.5)";
+                    map.style.transform = "scale(4)";
                     $('.mask').addClass("d-block")
                 }, 900);
             }
@@ -280,7 +284,7 @@
                 );
                 map.style.transformOrigin = "45% 40%";
                 setTimeout(function () {
-                    map.style.transform = "scale(4.5)";
+                    map.style.transform = "scale(4)";
                     $('.mask').addClass("d-block")
                 }, 900);
             }
